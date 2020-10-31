@@ -1,0 +1,179 @@
+**student class**
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lab3
+{
+    class student
+    {
+        private String name;
+        private String id;
+        private String department;
+        private float cgpa;
+        public void insert(String n, String i, String d, float c)
+        {
+            
+            name = n;
+            id = i;
+            department = d;
+            cgpa = c;
+        }
+
+
+        public void display()
+        {
+            Console.WriteLine(name + " " + id + " " + department + " " + cgpa + " ");
+        }
+    }
+
+    class testStudent { 
+    
+        static void Main(string[] args)
+        {
+            student s1 = new student();
+            student s2 = new student();
+            s1.insert("Siddiq", "36813", "cse", 3.68f);
+           s2.insert("Siddiq", "36813", "cse", 3.68f);
+            s1.display();
+            s2.display();
+        }
+    }
+}
+
+
+** Triangle class **
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Triange
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z;
+          
+
+
+
+            Console.Write("Input x of triangle: ");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input y of triangle: ");
+            y = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input z of triangle: ");
+            z = Convert.ToInt32(Console.ReadLine());
+
+
+
+            if (x == y && y == z)
+            {
+                Console.Write("This is an equilateral triangle.\n");
+            }
+            else if (x == y || x == z || y == z)
+            {
+                Console.Write("This is an isosceles triangle.\n");
+            }
+            else
+            {
+                Console.Write("This is a scalene triangle.\n");
+            }
+        }
+    }
+}
+
+
+**ACCOUNT CLASS**
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace account
+{ 
+    class ACCOUNT
+    {
+        private String accName;
+
+        private String acid;
+
+        private int balance;
+
+        public ACCOUNT(String accName, String acid, int balance)
+        {
+            this.accName = accName;
+            this.acid = acid;
+            this.balance = balance;
+        }
+
+        public void Deposit(int amount)
+        {
+            this.balance = balance + amount;
+            Console.WriteLine(balance);
+        }
+
+        public void Withdraw(int amount)
+        {
+            if (balance > amount)
+            {
+                this.balance = balance - amount;
+                Console.WriteLine(balance);
+            }
+
+        }
+    }
+****
+
+** Course Class **
+
+namespace Course
+{
+    class course
+    {
+        private String cname;
+        private String ccode;
+        private int ccredit;
+        public void insert(String CName, String CCode,int CCredit)
+        {
+
+            cname = CName;
+            ccode = CCode;
+            ccredit = CCredit;
+        }
+
+
+        public void ShowCourseInfo()
+        {
+            Console.WriteLine(cname + " " + ccode + " " + ccredit + " ");
+        }
+    }
+
+    class tesCourse
+    {
+
+        static void Main(string[] args)
+        {
+            course c1 = new course();
+            course c2 = new course();
+            c1.insert("oop2", "36813",3);
+            c2.insert("oop1", "36713",3);
+            c1.ShowCourseInfo();
+            c2.ShowCourseInfo();
+        }
+    }
+}
+
+
+*****
