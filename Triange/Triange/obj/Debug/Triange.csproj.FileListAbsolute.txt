@@ -1,0 +1,6 @@
+C:\Users\Arman\source\repos\Triange\Triange\obj\Debug\Triange.csproj.CoreCompileInputs.cache
+C:\Users\Arman\source\repos\Triange\Triange\bin\Debug\Triange.exe.config
+C:\Users\Arman\source\repos\Triange\Triange\bin\Debug\Triange.exe
+C:\Users\Arman\source\repos\Triange\Triange\bin\Debug\Triange.pdb
+C:\Users\Arman\source\repos\Triange\Triange\obj\Debug\Triange.exe
+C:\Users\Arman\source\repos\Triange\Triange\obj\Debug\Triange.pdb
